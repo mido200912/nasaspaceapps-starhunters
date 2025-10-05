@@ -1,0 +1,53 @@
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+.twinkle {
+  animation-name: twinkle;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateX(0) translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-300px) translateY(300px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.shooting-star {
+  animation: shooting 1.2s linear infinite;
+}
+
+@keyframes cloudMove {
+  from { transform: translateX(-200px); }
+  to { transform: translateX(120vw); }
+}
+
+.animate-cloud {
+  animation: cloudMove linear infinite;
+}
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(0) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(0) rotate(-360deg); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+.twinkle { animation-name: twinkle; animation-iteration-count: infinite; animation-timing-function: ease-in-out; }
+
+@keyframes shooting {
+  0% { transform: translateX(0) translateY(0) rotate(45deg); opacity: 1; }
+  100% { transform: translateX(-300px) translateY(300px) rotate(45deg); opacity: 0; }
+}
+.shooting-star { animation: shooting 1.2s linear infinite; }
+
+@keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.animate-spin-slow { animation: spin-slow 20s linear infinite; }
